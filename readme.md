@@ -1,3 +1,4 @@
+<img src="./lit_logo.png">
 
 # 이 프로젝트는 vite의 보일러플레이트에 기반한 lit 2.0 getting started를 수행하였음
 
