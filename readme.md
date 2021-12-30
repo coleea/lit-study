@@ -1,18 +1,39 @@
 <img src="./lit_logo.png">
 
-# 이 프로젝트는 vite의 보일러플레이트에 기반한 lit 2.0 getting started를 수행하였음
+# lit 2.0 getting started
+
+### 소개
+이 프로젝트는 vite의 보일러플레이트에 기반한 lit 2.0 getting started를 수행하였음\
+\
+공홈의 Getting Started 링크는 [여기](https://lit.dev/docs/getting-started/)이며 한글 번역본은 없다\
+\
+lit 2.0는 구글 프로젝트 답게 하위버전과 호환되지 않는 것으로 보인다. lit 1.0과는 임포트 구문부터 다르다\
+\
+참고로 lit 2.0의 임포트문은
+
+```javascript
+import {LitElement, html} from 'lit';
+```
+
+이지만 lit 구버전의 임포트문은
+
+```javascript
+import { LitElement, html } from "lit-element";
+```
+으로 시작한다
+
 
 ---
 
 ### lit 2.0 소개
 
-lit는 웹 컴포넌트용 UI 프레임워크이다\
+lit는 웹 컴포넌트에 기반한 UI 프레임워크이다\
 \
 웹 컴포넌트라는 용어가 생소하면 [네이버 d2의 기사](https://d2.naver.com/helloworld/188655)나 [MDN 문서](https://developer.mozilla.org/ko/docs/Web/Web_Components)를 참조할것
 \
 간단하게 설명하면 웹 컴포넌트는 웹브라우저 수준에서 네이티브 수준으로 지원하는 리액트 컴포넌트다. 비록 이 정의가 부정확 하더라도 어떤 개념인지 감을 잡는데는 도움이 된다\
 \
-따라서 lit는 UI컴포넌트를 만드는 도구인데 이는 리액트의 클래스 컴포넌트와 개념적으로나 구조적으로 비슷하다\
+따라서 lit는 UI컴포넌트를 만드는 도구인데 이는 `리액트의 클래스 컴포넌트와 개념적으로나 구조적으로 비슷하다`\
 \
 차이점은 리액트 컴포넌트기 최종적으로 html엘리먼트로 렌더링되는데 반하여 lit컴포넌트는 웹컴포넌트로 렌더링된다\
 \
